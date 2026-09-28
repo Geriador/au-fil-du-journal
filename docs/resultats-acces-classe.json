@@ -1,0 +1,30 @@
+[
+  {
+    "width": 1440,
+    "height": 1050,
+    "checks": [
+      "aucun-envoi-sans-code",
+      "code-incorrect",
+      "activation",
+      "jeton",
+      "selection-documentee",
+      "repli-sur-quota",
+      "deconnexion"
+    ],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "checks": [
+      "aucun-envoi-sans-code",
+      "code-incorrect",
+      "activation",
+      "jeton",
+      "selection-documentee",
+      "repli-sur-quota",
+      "deconnexion"
+    ],
+    "errors": []
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "label": "ordinateur",
+    "width": 1440,
+    "height": 1050,
+    "overflow": false,
+    "javascriptErrors": 0,
+    "externalRequests": 0,
+    "maxReplyCharacters": 220,
+    "checks": [
+      "portrait",
+      "suggestions",
+      "envoi",
+      "source",
+      "XSS",
+      "modale",
+      "reinitialisation"
+    ]
+  },
+  {
+    "label": "tablette",
+    "width": 834,
+    "height": 1112,
+    "overflow": false,
+    "javascriptErrors": 0,
+    "externalRequests": 0,
+    "maxReplyCharacters": 220,
+    "checks": [
+      "portrait",
+      "suggestions",
+      "envoi",
+      "source",
+      "XSS",
+      "modale",
+      "reinitialisation"
+    ]
+  },
+  {
+    "label": "telephone",
+    "width": 390,
+    "height": 844,
+    "overflow": false,
+    "javascriptErrors": 0,
+    "externalRequests": 0,
+    "maxReplyCharacters": 220,
+    "checks": [
+      "portrait",
+      "suggestions",
+      "envoi",
+      "source",
+      "XSS",
+      "modale",
+      "reinitialisation"
+    ]
+  },
+  {
+    "label": "petit-telephone",
+    "width": 320,
+    "height": 740,
+    "overflow": false,
+    "javascriptErrors": 0,
+    "externalRequests": 0,
+    "maxReplyCharacters": 220,
+    "checks": [
+      "portrait",
+      "suggestions",
+      "envoi",
+      "source",
+      "XSS",
+      "modale",
+      "reinitialisation"
+    ]
+  }
+]

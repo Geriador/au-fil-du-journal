@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#702a35">
+  <meta name="description" content="Un dialogue pédagogique documenté pour découvrir Anne Frank et son Journal, en classe de troisième.">
+  <title>Au fil du Journal — Dialoguer autour d’Anne Frank</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='2' width='24' height='28' rx='3' fill='%23702a35'/%3E%3Cpath d='M10 2v28M14 11h9M14 16h9' stroke='%23f8f1e4' stroke-width='2'/%3E%3C/svg%3E">
+  <style>/* STYLE */</style>
+</head>
+<body>
+  <a href="#question" class="skip-link">Aller à la discussion</a>
+  <div class="app-shell">
+    <header class="masthead">
+      <div class="brand"><span class="eyebrow">ATELIER DE LECTURE · 3<sup>e</sup></span><h1>Au fil du <em>Journal</em></h1></div>
+      <button class="quiet-button" id="open-sources" type="button" aria-label="Sources et édition"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5c-3-2-7-2-10 0v15c3-2 7-2 10 0 3-2 7-2 10 0V5c-3-2-7-2-10 0Zm0 0v15"/></svg><span>Sources &amp; édition</span></button>
+    </header>
+    <main class="journal">
+      <aside class="portrait-panel" aria-labelledby="portrait-name">
+        <div class="portrait-frame"><img src="/* PORTRAIT */" alt="Portrait photographique d’Anne Frank, souriante." width="1280" height="720"></div>
+        <div class="portrait-text"><span class="small-caps">UNE VOIX, UN JOURNAL</span><h2 id="portrait-name">Anne Frank</h2><p class="life-dates">1929 — 1945</p><p class="portrait-intro">Découvrir sa vie.<br> Comprendre son époque.</p></div>
+        <div class="side-notes"><p class="small-caps">TROIS REPÈRES POUR LIRE</p><ol class="timeline"><li><time>12 juin 1942</time><span>Son premier journal</span></li><li><time>6 juillet 1942</time><span>L’entrée dans l’Annexe</span></li><li><time>1<sup>er</sup> août 1944</time><span>La dernière entrée</span></li></ol><p class="sidebar-note">Un témoignage à lire avec son professeur et à éclairer par les archives.</p></div>
+      </aside>
+      <section class="conversation" aria-labelledby="chat-title">
+        <div class="conversation-top"><div><span class="section-label">SIMULATION PÉDAGOGIQUE</span><h2 id="chat-title">Au fil de tes questions</h2></div><button id="reset" type="button" class="quiet-button small"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9a8 8 0 1 1 0 6M4 3v6h6"/></svg><span>Nouvel échange</span></button></div>
+        <div class="mode-note"><span class="mode-tag" id="mode-label">Version documentaire</span><p id="mode-description">Des réponses préparées à partir de sources historiques.</p><button type="button" id="class-access" class="quiet-button small" hidden>Code de classe</button></div>
+        <div class="messages" id="messages" role="log" aria-label="Historique de la discussion" aria-live="polite" aria-relevant="additions" tabindex="0"></div>
+        <div class="question-starters" id="starters" aria-label="Suggestions de questions"></div>
+        <form id="chat-form" class="composer">
+          <label for="question">Ta question ou ta réflexion</label>
+          <div class="input-wrap"><textarea id="question" name="question" rows="2" maxlength="1000" placeholder="Qu’aimerais-tu comprendre ?" required enterkeyhint="send"></textarea><button type="submit" id="send" class="send-button" aria-label="Envoyer le message"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 7-7 7 7M12 5v15"/></svg></button></div>
+          <div class="composer-bottom"><span class="keyboard-tip">Entrée pour envoyer · Maj + Entrée pour une nouvelle ligne</span><span id="input-count">0 / 1 000</span></div>
+          <p class="form-status" id="status" role="status"></p>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer"><span>Une simulation pour apprendre. Le livre et les sources restent les références.</span><span>Édition de lecture · Le Livre de Poche, 2022</span></footer>
+  </div>
+  <dialog id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-head"><span class="section-label">POUR VÉRIFIER ET APPROFONDIR</span><button type="button" class="close-button" data-close="sources-dialog" aria-label="Fermer les sources">×</button></div><h2 id="sources-title">Le livre &amp; les sources</h2><div class="dialog-body"><div class="edition-card"><h3>L’édition utilisée en classe</h3><p><em>Le Journal d’Anne Frank</em>, Anne Frank, Calmann-Lévy / Le Livre de Poche, 2022.<br>ISBN : 978-2253937432.</p><p>Traduction : Philippe Noble et Isabelle Rosselin-Bobulesco.</p><p class="edition-note">Les renvois au Journal indiquent une date d’entrée. Les deux courts extraits français viennent de documents de la Maison Anne Frank. Leur formulation et leur page dans l’édition 2022 restent à vérifier avec le livre.</p></div><h3>Comment lire les réponses ?</h3><p>Les phrases au « je » sont des reformulations pédagogiques de faits documentés. Seuls les textes portant la mention « Citation » reprennent les mots d’un document.</p><p>Pour les événements après l’arrestation ou le regard des historiens, la réponse porte la mention « Repère historique ». Une information incertaine est présentée comme telle.</p><h3>Le fonctionnement de cette version</h3><p id="local-explanation">Cette version s’appuie sur une banque de réponses : elle reconnaît les sujets prévus, mais peut ne pas comprendre certaines formulations. En cas de doute, reformule ou demande à ton professeur.</p><p id="privacy-note">L’échange reste dans la mémoire de cet onglet et disparaît quand tu fermes ou actualises la page. Aucun message n’est envoyé à un service d’IA dans cette version.</p><h3>Documents consultés</h3><p class="reference-date">Vérification éditoriale : 28 septembre 2026.</p><ul class="source-list" id="source-list"></ul><p class="photo-credit">Portrait : photographie fournie par l’enseignant. Cette application pédagogique indépendante n’est pas un service de la Maison Anne Frank.</p></div></dialog>
+  <dialog id="reset-dialog" aria-labelledby="reset-title"><div class="dialog-head"><span class="section-label">REPARTIR D’UNE PAGE BLANCHE</span><button type="button" class="close-button" data-close="reset-dialog" aria-label="Annuler">×</button></div><h2 id="reset-title">Commencer un nouvel échange ?</h2><p>Les messages de cette discussion seront effacés.</p><div class="dialog-actions"><button type="button" class="quiet-button" data-close="reset-dialog">Garder cet échange</button><button type="button" class="primary-button" id="confirm-reset">Nouvel échange</button></div></dialog>
+  <dialog id="access-dialog" aria-labelledby="access-title"><div class="dialog-head"><span class="section-label">POURSUIVRE AVEC LA CLASSE</span><button type="button" class="close-button" data-close="access-dialog" aria-label="Fermer">×</button></div><h2 id="access-title">Le code du professeur</h2><p>Ce code active l’aide à la compréhension de tes questions. La banque de réponses reste disponible sans code.</p><p>Avec cette aide, tes questions et un contexte limité sont transmis au service de l’enseignant puis à OpenAI. N’indique aucune information personnelle.</p><form id="access-form"><label for="class-code">Code de classe</label><input id="class-code" type="password" required maxlength="128" autocomplete="off" spellcheck="false"><p id="access-status" role="status"></p><div class="dialog-actions"><button type="button" class="quiet-button" data-close="access-dialog">Continuer sans code</button><button id="activate-class" type="submit" class="primary-button">Activer l’aide</button></div></form></dialog>
+  <noscript><p class="noscript-note">Pour utiliser la discussion, active JavaScript dans ton navigateur. Tu peux aussi consulter les ressources de la Maison Anne Frank sur annefrank.org.</p></noscript>
+  <script>/* APPLICATION */</script>
+</body>
+</html>
